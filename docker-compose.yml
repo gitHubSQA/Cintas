@@ -84,14 +84,14 @@ services:
         networks:
             - selenium_grid_internal
 
-        volumes_from:
-               - data_volume
-
-
-    data_volume:
-      image: sap_hybris_data_volume
-      container_name: sap_hybris_data_volume
-      volumes:
-          - /vTest Results/
+    #     volumes_from:
+    #            - data_volume
+    #
+    #
+    # data_volume:
+    #   image: sap_hybris_data_volume
+    #   container_name: sap_hybris_data_volume
+    #   volumes:
+    #       - /vTest Results/
 
     #command: ["pybot", "usr/repository/Tests/demo_ch.robot"]
