@@ -87,7 +87,6 @@ services:
     #     volumes_from:
     #            - data_volume
     #
-    #
     # data_volume:
     #   image: sap_hybris_data_volume
     #   container_name: sap_hybris_data_volume
