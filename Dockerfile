@@ -10,7 +10,7 @@ RUN apk add --update --no-cache \
     git \
     openssh
 
-# Install: Robot-Framework, Selenium and dependencies ****
+# Install: Robot-Framework, Selenium and dependencies ****cd
 RUN pip install -U \
     robotframework \
     robotframework-pabot \
@@ -45,5 +45,9 @@ ENV PATH /usr/lib/python2.7/site-packages:$PATH
 WORKDIR /gitProjectCode/hybris-automation-cintas/
 
 #  Run a script: Initializes and updates submodule for hybris-automation-shared ****
-RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
-RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
+#RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
+#RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
+
+# TEMP
+RUN chmod +x run_init.sh
+RUN run_init.sh
