@@ -73,7 +73,7 @@ services:
               test: "exit 0"
 
     robotframework:
-        image: sap_hybris_robotframework
+        image: jepot/sap_hybris_robotframework
         container_name: sap_hybris_robotframework
         privileged: true
         command: top -b
