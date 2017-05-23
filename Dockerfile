@@ -39,15 +39,12 @@ COPY Project_Files/selenium_drivers/geckodriver /usr/bin
 # Set ENV ****
 ENV PATH /usr/bin:$PATH
 ENV PATH /usr/local/bin:$PATH
+ENV PATH /usr/local/lib:$PATH
 ENV PATH /usr/lib/python2.7/site-packages:$PATH
 
 # Set The WORKDIR ****
 WORKDIR /gitProjectCode/hybris-automation-cintas/
 
 #  Run a script: Initializes and updates submodule for hybris-automation-shared ****
-#RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
-#RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
-
-# TEMP
-RUN chmod +x run_init.sh
-RUN run_init.sh
+RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
+RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
