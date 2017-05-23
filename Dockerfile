@@ -48,5 +48,6 @@ WORKDIR /gitProjectCode/hybris-automation-cintas/
 #RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
 #RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
 
+# TEMP
 RUN chmod +x run_init.sh
 RUN run_init.sh
