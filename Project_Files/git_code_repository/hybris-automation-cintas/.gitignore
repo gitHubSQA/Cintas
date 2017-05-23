@@ -1,0 +1,7 @@
+*.pyc
+.idea/
+results/
+*.stackdump
+log.html
+output.xml
+report.html

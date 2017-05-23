@@ -1,0 +1,2 @@
+INSERT_UPDATE ServiceRequest;code[unique=true];requester(B2BCustomer.uid);subject;description;status(code);soldTo(B2BUnit.uid);creationtime[forceWrite=false,dateformat=dd.MM.yyyy hh:mm:ss]
+;555444665;dev50003459@test.com;This is the subject for QA;TShis is the description for GIO AUTOMATION IMPORT IMPEX FROM FILE;PENDING;0011032722;22.06.2016 01:47:17

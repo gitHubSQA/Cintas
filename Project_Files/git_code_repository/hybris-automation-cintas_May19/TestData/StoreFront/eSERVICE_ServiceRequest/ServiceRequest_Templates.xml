@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<test_suite_192>
+    <CNTR-192A TC_DESCRIPTION="CNTR-192A Validate the Default Search field values on the SR list page-Non-approver">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>WEARER-EDITOR</impx_ur_account_type>
+            <in_customer_email>dev50003459@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>MINE</wf_requests_to_view>
+            <vp_default_value>TRUE</vp_default_value>
+        </test>
+    </CNTR-192A>
+    <CNTR-192C TC_DESCRIPTION="CNTR-192C Validate the  Default Sorting Order for the SR list page as an Approver">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003460@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-04-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_default_srlist>TRUE</vp_default_srlist>
+        </test>
+    </CNTR-192C>
+    <CNTR-192D TC_DESCRIPTION="CNTR-192D Validate the SR list can be sorted by ID Asc or Desc-- Mine Page">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>WEARER-EDITOR</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-05-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003459@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>MINE</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>1</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>ID</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192D>
+    <CNTR-192E TC_DESCRIPTION="CNTR-192E Validate the SR list can be sorted by Submitted Date Asc or Desc">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-06-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>Submitted</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192E>
+    <CNTR-192F TC_DESCRIPTION="CNTR-192F Validate the SR list can be sorted by Description Asc or Desc">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-06-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>Description</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192F>
+    <CNTR-192G TC_DESCRIPTION="CNTR-192G Validate the SR list can be sorted by First Name Asc or Desc">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-06-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>First Name</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192G>
+    <CNTR-192H TC_DESCRIPTION="CNTR-192H Validate the SR list can be sorted by Last Name Asc or Desc">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-06-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>Last Name</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192H>
+    <CNTR-192I TC_DESCRIPTION="CNTR-192I Validate the SR list can be sorted by Email (if it exists)  Asc or Desc">
+        <test>
+            <execute_test>True</execute_test>
+            <impx_ur_update>TRUE</impx_ur_update>
+            <impx_ur_account_type>SR-APPROVER</impx_ur_account_type>
+            <impx_sr_update>TRUE</impx_sr_update>
+            <impx_sr_requester>dev50003459@test.com</impx_sr_requester>
+            <impx_sr_soldto>0011032722</impx_sr_soldto>
+            <impx_sr_creation_time>15-06-2016 01:47:17</impx_sr_creation_time>
+            <impx_sr_pending_status_count>3</impx_sr_pending_status_count>
+            <impx_sr_rejected_status_count>3</impx_sr_rejected_status_count>
+            <in_customer_email>dev50003460@test.com</in_customer_email>
+            <in_customer_password>12341234</in_customer_password>
+            <wf_requests_to_view>OTHER</wf_requests_to_view>
+            <vp_request_count>TRUE</vp_request_count>
+            <vp_min_request_count_exp>3</vp_min_request_count_exp>
+            <vp_sort>TRUE</vp_sort>
+            <vp_sort_criteria>Email</vp_sort_criteria>
+            <vp_filter_sort_type>SORT</vp_filter_sort_type>
+        </test>
+    </CNTR-192I>
+</test_suite_192>

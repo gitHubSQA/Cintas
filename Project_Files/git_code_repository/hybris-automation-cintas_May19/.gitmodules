@@ -1,0 +1,3 @@
+[submodule "hybris-automation-shared"]
+	path = hybris-automation-shared
+	url = ssh://git@enterprise-stash.hybris.com:7999/pdm/hybris-automation-shared.git
