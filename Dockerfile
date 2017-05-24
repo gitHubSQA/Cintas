@@ -38,11 +38,11 @@ RUN pip install -U \
 ## Add Code Repository ****
 RUN mkdir /gitProjectCode
 #ADD Project_Files/git_code_repository/ gitProjectCode/
-#ADD /Automation/Cintas/Project_Files/git_code_repository/ gitProjectCode/
+#ADD /home/hybris/Automation/Cintas/Project_Files/git_code_repository/ gitProjectCode/
 
 ## Add selenium drivers ****
-COPY /selenium-webdriver/selenium_drivers/chromedriver /usr/bin
-COPY /selenium-webdriver/selenium_drivers/geckodriver /usr/bin
+COPY /home/hybris/selenium-webdriver/selenium_drivers/chromedriver /usr/bin
+COPY /home/hybris/selenium-webdriver/selenium_drivers/geckodriver /usr/bin
 
 ## Set ENV ****
 ENV PATH /usr/bin:$PATH
