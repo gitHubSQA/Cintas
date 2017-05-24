@@ -29,8 +29,8 @@ RUN pip install -U \
     urllib3
 
 # Add Code Repository ****
-RUN mkdir /gitProjectCode
-ADD Project_Files/git_code_repository/ gitProjectCode/
+# RUN mkdir /gitProjectCode
+# ADD Project_Files/git_code_repository/ gitProjectCode/
 
 # Add selenium drivers ****
 COPY Project_Files/selenium_drivers/chromedriver /usr/bin
@@ -43,8 +43,8 @@ ENV PATH /usr/local/lib:$PATH
 ENV PATH /usr/lib/python2.7/site-packages:$PATH
 
 # Set The WORKDIR ****
-WORKDIR /gitProjectCode/hybris-automation-cintas/
+# WORKDIR /gitProjectCode/hybris-automation-cintas/
 
 #  Run a script: Initializes and updates submodule for hybris-automation-shared ****
-RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
-RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
+# RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
+# RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
