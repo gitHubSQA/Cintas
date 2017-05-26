@@ -30,6 +30,9 @@ RUN pip install -U \
 
 # Add Code Repository ****
 RUN mkdir /gitProjectCode
+
+WORKDIR /
+
 #ADD Project_Files/git_code_repository/ gitProjectCode/
 ADD /Automation/Cintas/Project_Files/git_code_repository/ gitProjectCode/
 
