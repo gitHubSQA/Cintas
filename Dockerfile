@@ -3,6 +3,10 @@ FROM openjdk:jre-alpine
 MAINTAINER Jefry D. <jefry.denny@sap.com>
 LABEL name="Docker image for the Robot Framework http://robotframework.org/"
 
+## ---------------------------------------------------------------------------
+## - LAST UPDATED: May 26, 2016, by Jefry Denny
+## ---------------------------------------------------------------------------
+
 # Install  Python ***
 RUN apk add --update --no-cache \
     python2 \
@@ -28,15 +32,11 @@ RUN pip install -U \
     certifi \
     urllib3
 
-# Add Code Repository ****
+# Create a Folder for the Code ****
 RUN mkdir /gitProjectCode
 
-WORKDIR /
-RUN cp -r Automation/Cintas/Project_Files/git_code_repository/* gitProjectCode/
-
-
-#ADD Project_Files/git_code_repository/ gitProjectCode/
-#ADD /Automation/Cintas/Project_Files/git_code_repository/ gitProjectCode/
+# Add Code Repository ****
+ADD /Project_Files/git_code_repository/ gitProjectCode/
 
 # Add selenium drivers ****
 #COPY ./selenium-webdriver/selenium_drivers/chromedriver /usr/bin
@@ -49,9 +49,4 @@ ENV PATH /usr/local/lib:$PATH
 ENV PATH /usr/lib/python2.7/site-packages:$PATH
 
 # Set The WORKDIR ****
-#WORKDIR /gitProjectCode/hybris-automation-cintas/
-
-
-#  Run a script: Initializes and updates submodule for hybris-automation-shared **** TODO: this part should have been done BEFORE
-# RUN chmod +x /gitProjectCode/hybris-automation-cintas/run_init.sh
-# RUN /gitProjectCode/hybris-automation-cintas/run_init.sh
+WORKDIR /gitProjectCode/hybris-automation-cintas/
