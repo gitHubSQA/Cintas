@@ -102,7 +102,7 @@ services:
         networks:
             - selenium_grid_internal
         volumes:
-            - /Automation/TestReport/:/volTestResult
+            - ../TestReport/:/volTestResult
 
     #     volumes_from:
     #            - data_volume
