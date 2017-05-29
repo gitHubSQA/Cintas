@@ -101,10 +101,12 @@ services:
                 condition: service_healthy
         networks:
             - selenium_grid_internal
+        volumes:
+            - /Automation/TestReport/:/volTestResult
 
-        volumes_from:
-               - data_volume
-
+    #     volumes_from:
+    #            - data_volume
+    #
     data_volume:
       image: jepot/sap_hybris_data_volume
       container_name: sap_hybris_data_volume
