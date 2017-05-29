@@ -109,6 +109,7 @@ services:
       image: jepot/sap_hybris_data_volume
       container_name: sap_hybris_data_volume
       volumes:
-          - /vTestResults/
+          - /volTestResult/
+          #- /vTestResults/
 
     #command: ["pybot", "usr/repository/Tests/demo_ch.robot"]
